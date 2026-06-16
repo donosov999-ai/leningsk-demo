@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
 <title>Новости и объявления — ГСК «Ленинский», Екатеринбург</title>
-<link rel="stylesheet" href="leningsk.css">
+<link rel="stylesheet" href="leningsk.css"><link rel="icon" href="favicon.png"><script src="leningsk.js" defer></script>
 <style>
   .nlist{display:grid;gap:16px}
   .ni{background:#fff;border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:12px;padding:20px 22px}
@@ -17,7 +16,7 @@
 <header><div class="wrap nav">
   <a class="brand" href="index.html"><img src="len-logo.png" alt="ГСК Ленинский"></a>
   <div class="links"><a href="index.html">О кооперативе</a><a href="len-prodazha.html">Продажа и аренда</a><a href="len-platezhi.html">Платежи</a><a href="len-novosti.html" class="active">Новости</a><a href="len-kontakty.html">Контакты</a></div>
-  <a class="btn nv" href="len-kontakty.html">Связаться</a>
+  <button class="burger" aria-label="Меню" onclick="lenBurger(this)"><span></span><span></span><span></span></button><a class="btn nv" href="len-kontakty.html">Связаться</a>
 </div></header>
 
 <div class="phead"><div class="wrap">
@@ -38,6 +37,6 @@
 
 <footer><div class="wrap">
   <div>© 2026 ГСК «Ленинский» · Екатеринбург, ул. Начдива Онуфриева, 55</div>
-  <div><a href="len-kontakty.html">Контакты</a> · HTTPS · адаптив</div>
+  <div><a href="len-kontakty.html">Контакты</a> · <a href="len-politika.html">Политика ПД</a> · HTTPS · адаптив</div>
 </div></footer>
 </body></html>

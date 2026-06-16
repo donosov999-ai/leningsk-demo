@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
 <title>Контакты и служба сервиса — ГСК «Ленинский», Екатеринбург</title>
-<link rel="stylesheet" href="leningsk.css">
+<link rel="stylesheet" href="leningsk.css"><link rel="icon" href="favicon.png"><script src="leningsk.js" defer></script>
 </head>
 <body>
 <header><div class="wrap nav">
   <a class="brand" href="index.html"><img src="len-logo.png" alt="ГСК Ленинский"></a>
   <div class="links"><a href="index.html">О кооперативе</a><a href="len-prodazha.html">Продажа и аренда</a><a href="len-platezhi.html">Платежи</a><a href="len-novosti.html">Новости</a><a href="len-kontakty.html" class="active">Контакты</a></div>
-  <a class="btn nv" href="tel:+73432401994">Позвонить</a>
+  <button class="burger" aria-label="Меню" onclick="lenBurger(this)"><span></span><span></span><span></span></button><a class="btn nv" href="tel:+73432401994">Позвонить</a>
 </div></header>
 
 <div class="phead"><div class="wrap">
@@ -22,11 +21,11 @@
   <h2>Служба сервиса</h2>
   <p class="lead">Заметили неисправность оборудования или возникли технические проблемы с вашим объектом — оставьте заявку. Стараемся выполнять в течение нескольких дней.</p>
   <div class="contact">
-    <form class="form" onsubmit="event.preventDefault();this.querySelector('.btn').textContent='Заявка отправлена ✓'">
-      <div><label>Имя *</label><input required placeholder="Как к вам обращаться"></div>
-      <label>Телефон *</label><input required placeholder="+7 ___ ___-__-__">
-      <label>Подробное описание проблемы</label><textarea rows="4" placeholder="Что случилось и на каком объекте"></textarea>
-      <label class="consent"><input type="checkbox" checked> Согласен на обработку персональных данных согласно Политике обработки ПД (152-ФЗ)</label>
+    <form class="form svc">
+      <div><label>Имя *</label><input name="name" required placeholder="Как к вам обращаться"></div>
+      <label>Телефон *</label><input name="phone" required placeholder="+7 ___ ___-__-__">
+      <label>Подробное описание проблемы</label><textarea name="msg" rows="4" placeholder="Что случилось и на каком объекте"></textarea>
+      <label class="consent"><input type="checkbox" checked> Согласен на обработку персональных данных согласно <a href="len-politika.html" style="color:inherit;text-decoration:underline">Политике обработки ПД (152-ФЗ)</a></label>
       <button class="btn nv">Отправить заявку</button>
     </form>
     <div class="box">
@@ -44,6 +43,6 @@
 
 <footer><div class="wrap">
   <div>© 2026 ГСК «Ленинский» · Екатеринбург, ул. Начдива Онуфриева, 55</div>
-  <div><a href="index.html">На главную</a> · HTTPS · адаптив</div>
+  <div><a href="index.html">На главную</a> · <a href="len-politika.html">Политика ПД</a> · HTTPS · адаптив</div>
 </div></footer>
 </body></html>
